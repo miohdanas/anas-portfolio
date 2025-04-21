@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anas - Developer Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(0, 0, 33);
+            color: white;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.01rem;
+        }
+        main hr {
+            border: 0;
+            background-color: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+        .left {
+            font-size: 1.5rem;
+        }
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 130px 0;
+        }
+        .firstSection > div {
+            width: 30%;
+        }
+        .leftSection {
+            font-size: 3rem;
+        }
+        .leftSection .btn {
+            padding: 12px;
+            background-color: #1e2167;
+            color: white;
+            border: 2px solid white;
+            font-size: 20px;
+            cursor: pointer;
+            margin: 10px 10px 0 0;
+        }
+        .rightSection img {
+            width: 80%;
+        }
+        .purple {
+            color: rgb(170, 107, 228);
+        }
+        .text-gray {
+            color: gray;
+        }
+        #element {
+            color: rgb(170, 107, 228);
+        }
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: auto;
+        }
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+        .secondSection .box {
+            background: white;
+            width: 77vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            position: relative;
+        }
+        .image-top {
+            width: 23px;
+            position: absolute;
+            top: -32px;
+            left: -9px;
+        }
+        .vertical-title {
+            position: absolute;
+            top: 75px;
+            width: 150px;
+        }
+        .vertical-desc {
+            position: absolute;
+            top: 100px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Anas's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Service</a></li>
+                    <li><a href="/">Project</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Anas</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span><br>
+                <button class="btn">Download Resume</button>
+                <button class="btn">Visit Github</button>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png1.png" alt="developer image">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="developer.png.png" alt="">
+                    <div class="vertical-title">HTML Developer (2010-2012)</div>
+                    <div class="vertical-desc">
+                        Worked on building static websites and responsive landing pages using HTML and CSS.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.png.png" alt="">
+                    <div class="vertical-title">Node.js Developer (2012-2014)</div>
+                    <div class="vertical-desc">
+                        Created server-side applications and APIs using Node.js and Express framework.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.png.png" alt="">
+                    <div class="vertical-title">Frontend Developer (2014-2016)</div>
+                    <div class="vertical-desc">
+                        Developed modern UI interfaces using JavaScript frameworks and RESTful integration.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer', 'Video Editor'],
+            typeSpeed: 50,
+            loop: true
+        });
+    </script>
+</body>
+</html>
